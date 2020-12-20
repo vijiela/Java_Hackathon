@@ -1,0 +1,10 @@
+java is a programming langauage
+selenium is automation tool
+GIt is a repository
+Maven is a powerful project built management tool
+selenium is automation tool java is a programming langauage
+selenium is automation tool
+GIt is a repository
+Maven is a powerful project built management tool
+selenium is automation tool
+java uses OOPs
