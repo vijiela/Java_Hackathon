@@ -1,0 +1,185 @@
+Q7. What are different ways to create String Object? *
+String str1=new String(“Java”);
+String str2 = ”Selenium”;
+
+Q10. What is String subsequence method? *
+This method returns the char subsequence of the given string.
+Syntax : public CharSequence subsequence(int beginindex,end index);
+
+Q11. How to Split String in java? *
+Java String split method is used for splitting a String into its substrings based on the given delimiter or regular expression.
+String[] split(String regex);
+String[] split(String regex, int limit);
+
+Q35. Write test cases for how to test just the withdrawing functionality from ATM ( Minimum 10 test cases required )
+#1) Verify if the card reader is working correctly. A screen should ask you to insert the pin after inserting the valid card.
+#2) Verify if the cash dispenser is working as expected.
+#3) Verify if the receipt printer is working correctly. Which means it can print the data on the paper and the paper comes out properly.
+#4) Verify if the Screen buttons are working correctly. For touch screen: Verify if it is operational and working as per the expectations.
+#5) Verify if the text on the screen button is visible clearly.
+#6) Verify the font of the text on the screen buttons.
+#7) Verify each number button on the Keypad.
+#8) Verify the functionality of the Cancel button on the Keypad.
+#9) Verify the text color of the keypad buttons. The numbers should be visible clearly.
+#10) Verify the text color and font of the data on the screen. The user should be able to read it clearly
+
+Q36. Write to test scenarios to test Pencil
+•	Check the Height of the Pencil.
+•	Check the Strongness of the Pencil.
+•	Check the darkness After writing something by a pencil.
+•	Check the comfort while you write or grip.
+•	Check the thickness of the LED.
+•	Check Are you able to write on paper, wall, and a few other places.
+•	Check by a pencil how many meters you can write.
+•	Check how often the LED is broken or melting while you write on different surfaces.
+•	Check the colour of the pencil.
+•	Check after writing the text is readable or not.
+
+
+Q37. What is JVM and explain me the Java memory allocation *
+Java virtual machine  is an abstract computing machine that enables a computer to run a Java program. There are three notions of JVM: specification (where working of JVM is specified. But the implementation has been provided by Sun and other companies), implementation (known as (JRE) Java Runtime Environment) and instance (after writing Java command, to run Java class, an instance of JVM is created).
+Memory allocation in java refers to the process where the computer programs and services are allocated dedicated to virtual memory spaces. The Java Virtual Machine divides the memory into Stack and Heap Memory. For Java Virtual Machine, executing an application in its maximum potential can happen from stack and heap memory. Every time a new variable or object is declared, the memory allocates memory dedicated to such operations.
+
+Q38. What is Polymorphism and encapsulation? *
+Polymorphism : Many forms, Any function or method which accepting parent class can take its child cass
+Any child object can replace the role of itself and parent.
+Two types: 1.static polymorphism :where method overloading happens in compile time.
+2.Dynamic Polymorphism :Overriding happens in Run time.
+
+Q39. What is method overloading and Method over riding? *
+Overloading: Creating more than one method with same name and with different argument list.
+Overriding: It occurs simply defining in the child class a method with same name of a method in a parent class.it will be done in both parent class and child class.
+Q40. Why string is Immutable? 
+Because there cannot be more than one string with same value in the memory, String cannot change its value instead a new string is formed everytime when edited.
+
+Q41. What is the difference between String and String buffer? *
+String : It is immutable ie. When you modify the value , new string will be created.
+And it is thread safe so deadlock will not arise and slow because of thread safe.
+String Buffer: It is mutable , if you modify any string existing string will get modify, and it is thread safe and deadlock will not arise and it is slow and faster than string.
+
+Q42. What is the difference between array and array list? 
+Array is a fixed size data structure while ArrayList is not. One need not to mention the size of Arraylist while creating its object. Even if we specify some initial capacity, we can add more elements.
+Array can contain both primitive data types as well as objects of a class depending on the definition of the array. However, ArrayList only supports object entries, not the primitive data types.
+ie. When we do arraylist.add(1); : it converts the primitive int data type into an Integer object. 
+•	Since ArrayList can’t be created for primitive data types, members of ArrayList are always references to objects at different memory locations (See this for details). Therefore in ArrayList, the actual objects are never stored at contiguous locations. References of the actual objects are stored at contiguous locations.
+In array, it depends whether the arrays is of primitive type or object type. In case of primitive types, actual values are contiguous locations, but in case of objects, allocation is similar to ArrayList.
+•	Java ArrayList supports many additional operations like indexOf(), remove(), etc. These functions are not supported by Arrays.
+
+
+Q43. What is the difference between hash map and Hash table? *
+HashMap:1. HashMap is non synchronized. It is not-thread safe and can't be shared between many threads without proper synchronization code.
+2. ) HashMap allows one null key and multiple null values.
+3.It is fast
+4. HashMap is traversed by Iterator.
+5.HashMap inherits AbstractMap class
+HashTable:1. Hashtable is synchronized. It is thread-safe and can be shared with many threads.
+2. Hashtable doesn't allow any null key or value.
+3.it is slow
+4. Hashtable is traversed by Enumerator and Iterator
+5.Hashtable inherits Dictionary class
+
+Q44. What is a vector in Java? *
+Vector implements List Interface. Like ArrayList it also maintains insertion order but it is rarely used in non-thread environment as it is synchronized and due to which it gives poor performance in searching, adding, delete and update of its elements.
+Q45. What is set in java? 
+Java Set is a collection of elements (Or objects) that contains no duplicate elements. Java Set is an interface that extends Collection interface. Unlike List, Java Set is NOT an ordered collection, it's elements does NOT have a particular order.
+Q46. What is an abstract class? 
+It is a process where you show only relevant data and hide unnecessary details of an object from the user interface
+Class needs to be declared using “abstract” keyword”
+Abstract class cannot be instantiated
+Abstract method will be implemented in child of the abstract class.
+
+Q47. What is an interface? 
+We cannot instantiate an interface.
+Interface provides full abstraction
+Its uses keyword implements to implements an interface in a class
+All interface by default abstract and public and it cannot be declared as private and protected.
+Interface and extends another interface
+
+Q48. Why Java is Platform independent? *
+While you write a Java code and feed it to the compiler a .class file will be generated. Now this .class file/Byte code common for all kind of system whether its Linux or Mac or Windows.  Now to run this .class file, we need JRE (which is actually implementation of JVM). SO Mac will have its own version of JRE, Widows will have different and Linux has different one too. But one thing to notice here is that --- the input for all these , means the .class file is same. This is actually Platform Independence.
+Q49. What are access modifiers? Give me an example? *
+access modifiers in Java helps to restrict the scope of a class, constructor, variable, method, or data member. There are four types of access modifiers available in java: 
+1.	Default – No keyword required
+2.	Private
+3.	Protected
+4.	Public
+Q50. What are java exceptions? Give me an example *
+An exception (or exceptional event) is a problem that arises during the execution of a program. When an Exception occurs the normal flow of the program is disrupted and the program/Application terminates abnormally, which is not recommended, therefore, these exceptions are to be handled.
+Eg: ArrayOutOfBoundException()
+FileNotFoundException()
+Q51. What is the difference between throws and throwable? 
+throws is used in method declarations to say that a given exception may be thrown by the method
+Throwable is the root class of all objects that can be thrown. If you want to catch all kinds of throwables you could do.
+Q52. What is the difference between Error and exception? 
+Errors belong to the Unchecked category. It occurs at runtime only. On the other hand, Exceptions are the conditions that can be handled using try/catch, throw keywords. Exceptions can occur at compile-time or runtime.
+
+Q53. What is the difference between Error, throwable and exception? *
+Exception is programmatically recoverable. Its subclass RuntimeException indicates a programming error and is usually not to be caught as well. Throwable is super class of Exception as well as Error . In normal cases we should always catch sub-classes of Exception , so that the root cause doesn't get lost.
+Q54. What are collection APIs, give me an example *
+The Collection API is a set of classes and interfaces that support operation on collections of objects. These classes and interfaces are more flexible, more powerful, and more regular than the vectors, arrays, and hashtables if effectively replaces. Example of classes: HashSet, HashMap, ArrayList, LinkedList, TreeSet and TreeMap. Example of interfaces: Collection, Set, List and Map.
+
+Q55. What is the difference between final and finally? 
+A final class cannot be instantiated, a final method cannot be overridden and a final variable cannot be reassigned. The finally keyword is used to create a block of code that follows a try block. A finally block of code always executes, whether or not an exception has occurred.
+
+Q56. Will java supports multiple inheritance? *
+No java will not support multiple inheritance.
+
+Q57. What are the different types of interface? (Ans List, set, Queue) *
+•	Collection — the root of the collection hierarchy. ...
+•	Set — a collection that cannot contain duplicate elements. ...
+•	List — an ordered collection (sometimes called a sequence). ...
+•	Queue — a collection used to hold multiple elements prior to processing.
+Q58. What are wrapper class? Give me an example *
+Wrapper classes are used for converting primitive data types into objects, like int to Integer etc. eg.Integer,Char,Float…
+Q59. What is boxing and unboxing in Java? Explain with an example *
+Boxing: converting primitive datatype to object of the corresponding wrapper class
+Eg. int to Integer
+Unboxing :It is the process of autoboxing
+Eg.Interger to int
+
+Q60. Explain for each loop *
+For-each is another array traversing technique like for loop, while loop, do-while loop introduced in Java5.
+•	It starts with the keyword for like a normal for-loop.
+•	Instead of declaring and initializing a loop counter variable, you declare a variable that is the same type as the base type of the array, followed by a colon, which is then followed by the array name.
+•	In the loop body, you can use the loop variable you created rather than using an indexed array element.
+•	It’s commonly used to iterate over an array or a Collections class (eg, ArrayList)
+
+
+Syntax:  for(type var: arr)
+{
+   Statements using var;
+}
+
+Q61. What are iterators, explain with an example 
+Iterator is used for iterating (looping) various collection classes such as HashMap, ArrayList, LinkedList etc. 
+The iterator() method can be used to get an Iterator for any collection:
+Eg: ArrayList names = new ArrayList();
+	names.add(“Latha”);
+names.add(“steve”);
+
+names.add(“john”);
+	
+names.add(“shrus”);
+Iterator It = names.iterator();
+
+Q 62. write an algorithm to reverse first 3 numbers, then next 3 numbers, then next 3 numbers, the number will be based on var k. Array = [3,2,4,7,0,3,1,5,8, 4] k=3 OutPut = [4,2,3,3,0,7,8,5,1,4] *
+Step1: Consider subarray of size k=3, and reverse it
+Step 2:If k is not multiple of n where n is the size of the array, for the last group we will have less than k elements left, we need to reverse all remaining elements
+Step 3: If k = 1, the array should remain unchanged. If k >= n, we reverse all elements present in the array.
+
+
+
+Q 63. What is multithreading, serialization and Generics in Java *
+Multithreading is a Java feature that allows concurrent execution of two or more parts of a program for maximum utilization of CPU. Each part of such program is called a thread. So, threads are light-weight processes within a process.
+
+Threads can be created by using two mechanisms :
+1. Extending the Thread class
+2. Implementing the Runnable Interface
+Serialization: To serialize an object means to convert its state to a byte stream so that the byte stream can be reverted back into a copy of the object. A Java object is serializable if its class or any of its superclasses implements either the java. io. Serializable interface or its subinterface, java. Io
+Generics:
+Generics means parameterized types. The idea is to allow type (Integer, String, … etc, and user-defined types) to be a parameter to methods, classes, and interfaces. 
+Using Generics, it is possible to create classes that work with different data types.
+An entity such as class, interface, or method that operates on a parameterized type is called generic entity
+It is type-Safety
+Type casting is not required
+Compile-Time Checking.
