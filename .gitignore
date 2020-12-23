@@ -2,3 +2,4 @@
 .project
 .settings/*
 desktop.ini
+/bin/
